@@ -31,6 +31,11 @@ export class PipelineStack extends Stack {
             synthAction,
             cdkCliVersion: "1.62.0"
         });
+        
+        // Test
+        
+        const testApp = new WebServiceStage(this, 'Test');
+        const testStage = pipeline.addApplicationStage(testApp);
 
         // Pre-prod
         //
