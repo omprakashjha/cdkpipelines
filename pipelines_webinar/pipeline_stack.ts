@@ -28,7 +28,8 @@ export class PipelineStack extends Stack {
         const pipeline = new pipelines.CdkPipeline(this, 'Pipeline', {
             cloudAssemblyArtifact,
             sourceAction,
-            synthAction
+            synthAction,
+            cdkCliVersion: "2.50.0"
         });
 
         // Pre-prod
