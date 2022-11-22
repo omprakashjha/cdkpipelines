@@ -29,7 +29,7 @@ export class PipelineStack extends Stack {
             cloudAssemblyArtifact,
             sourceAction,
             synthAction,
-            cdkCliVersion: "2.50.0"
+            cdkCliVersion: "1.62.0"
         });
 
         // Pre-prod
